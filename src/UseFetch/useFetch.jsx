@@ -9,6 +9,7 @@ const useFetch = (endpoint, query) => {
     method: "GET",
     url: `https://jsearch.p.rapidapi.com/${endpoint}`,
     params: { ...query },
+    //When running the app replace the RAPID_API_KEY with the actual key, also do the same in jobsearch.jsx component
     headers: {
       "X-RapidAPI-Key": process.env.RAPID_API_KEY,
       "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
